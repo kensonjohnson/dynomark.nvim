@@ -281,7 +281,7 @@ local function update_dynomark_blocks()
                 vim.api.nvim_buf_set_extmark(0, ns_id, row, 0, {
                     virt_text = { { line, "Comment" } },
                     virt_text_pos = "overlay",
-                    hl_mode = "combine",
+                    hl_mode = "replace",
                 })
             elseif row == end_row then
                 -- Add remaining lines as virtual lines
